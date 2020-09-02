@@ -18,7 +18,7 @@ def getAverage():
     n = (input())
     if n == "done": break
     nums = float(n)
-    values.append(n)
+    values.append(nums)
   
   print(sum(values)/len(values))
       
