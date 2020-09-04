@@ -6,9 +6,18 @@
 '''
 fh = "But soft what light through yonder window breaks It is the east and Juliet is the sun Arise fair sun and kill the envious moon Who is already sick and pale with grief"
 
-count = dict()
+counts = dict()
 words = fh.split()
 
 for word in words:
-  count[word] = count.get(word, 0) + 1
-print(count)
+  counts[word] = counts.get(word, 0) + 1
+print(counts)
+
+bigcount = None
+bigword = None
+for word,count in counts.items():
+  if bigcount is None or count > bigcount:
+    bigword = word
+    bigcount = count
+
+print(bigword, bigcount)
