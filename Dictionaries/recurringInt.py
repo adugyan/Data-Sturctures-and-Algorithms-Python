@@ -11,8 +11,13 @@ def findDouble(arrs):
   repeats = dict()
   for arr in arrs:
     repeats[arr] = repeats.get(arr, 0) + 1
-    if repeats[arr] == 2: break
-    print(arr)
+    if repeats[arr] == 2: 
+      print(arr)
+      break
+    else:
+      continue
+      print('Not Defined')
+  
     
     
 
